@@ -1,4 +1,4 @@
-use database mysitedb;
+use mysitedb;
 
 UPDATE tPeliculas SET url_imagen= "https://i.ebayimg.com/images/g/DLkAAOSwdLJfcflD/s-l1600.jpg" where id=1;
 
