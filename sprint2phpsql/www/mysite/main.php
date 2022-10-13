@@ -15,8 +15,7 @@
 		echo '<br>';
 		echo $row['1'];
 		echo '<br>';
-		echo '<img src="'.$row['2'];
-		echo 'width="80" heigh="120>';
+		echo '<img src="'.$row['2'].'width="80" height="120">';
 		echo '<br>';
 		echo $row['3'];
 		echo '<br>';
