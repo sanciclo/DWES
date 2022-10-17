@@ -28,11 +28,11 @@ $db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
         ?>
     </ul>
     <p>Deja un nuevo comentario:</p>
-        <form action="/comment.php" method="post">
+    <form action="/comment.php" method="post">
         <textarea rows="4" cols="50" name="new_comment"></textarea><br>
-        <input type="hidden" name="cancion_id" value="<?php echo $cancion_id; ?>">
+        <input type="hidden" name="pelicula_id" value="<?php echo $pelicula_id; ?>">
         <input type="submit" value="Comentar">
-        </form>
+    </form>
 </body>
 
 </html>
