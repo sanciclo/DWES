@@ -4,12 +4,17 @@
 <html>
     <body>
         <?php
-            $pelicula_id = $_POST['id'];
-            $comentario = $_POST['new_comment'];
+        session_start();
+        $user_id_a_insertar = 'NULL';
+        if (!empty($_SESSION['user_id'])) {
+        $user_id_a_insertar = $_SESSION['user_id'];
+        }
+        $pelicula_id = $_POST['id'];
+        $comentario = $_POST['new_comment'];
     
-            $query = "INSERT INTO tComentarios(comentario, usuario_id, pelicula_id, fecha)
-VALUES ('".$comentario."',NULL, ".$pelicula_id.",CURDATE())";
-            mysqli_query($db, $query) or die('Error');
+        $query = "INSERT INTO tComentarios(comentario, usuario_id, pelicula_id, fecha)
+VALUES ('".$comentario."',".$user_id.", ".$pelicula_id.",CURDATE())";
+        mysqli_query($db, $query) or die('Error');
         echo "<p>Nuevo comentario ";
         echo mysqli_insert_id($db);
         echo " añadido</p>";
