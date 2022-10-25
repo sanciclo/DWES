@@ -1,12 +1,14 @@
 <html>
 <head>
 <style>
-			
-			img:hover{
-				animation-name: fadeInOut, moveLeft300px, bounce;
-                animation-duration: 2.5s, 5s, 1s;
-                animation-iteration-count: 2, 1, 5;
-			}
+
+            img:hover{
+            -webkit-transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            -o-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            transform: scale(1.5)
+            }
 		
 		</style>
 </head>
