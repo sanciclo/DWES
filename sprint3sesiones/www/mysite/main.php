@@ -11,14 +11,17 @@
             transform: scale(1.5)
             
             }
-		
+
+            table{
+                background-color: #bababa ;
+            }
+
 		</style>
 </head>
 <body>
 <?php
 	$db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
 ?>
-	<h1>Conexión establecida</h1>
 	<?php
 	$query = 'SELECT * FROM tPeliculas';
 	$result = mysqli_query($db, $query) or die('Query error');
