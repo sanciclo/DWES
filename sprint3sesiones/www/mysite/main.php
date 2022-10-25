@@ -7,7 +7,9 @@
             -moz-transform: scale(1.5);
             -o-transform: scale(1.5);
             -ms-transform: scale(1.5);
+            transition: all 4s;
             transform: scale(1.5)
+            
             }
 		
 		</style>
