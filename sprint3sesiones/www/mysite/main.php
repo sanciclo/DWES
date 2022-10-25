@@ -2,6 +2,11 @@
 <head>
 <style>
 
+            *{
+                font-weight: bold;
+                text-decoration: white;
+            }
+
             img:hover{
             -webkit-transform: scale(1.5);
             -moz-transform: scale(1.5);
