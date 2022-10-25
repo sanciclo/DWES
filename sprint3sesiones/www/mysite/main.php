@@ -1,6 +1,19 @@
-
 <html>
 <head>
+<style>
+			img{
+				transition: height 0.6s linear 0.3s;
+			}
+			img:hover{
+				height: 400pX;
+			}
+			td:hover{
+				background-color: blue;
+			}
+			td{
+				transition: background-color 0.4s linear 0.5s;
+			}
+		</style>
 </head>
 <body>
 <?php
@@ -31,3 +44,4 @@
 	<a href="/logout.php">Logout</a>
 </body>
 </html>
+
