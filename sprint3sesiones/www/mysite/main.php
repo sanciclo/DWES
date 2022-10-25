@@ -5,7 +5,8 @@
 				transition: height 0.6s linear 0.3s;
 			}
 			img:hover{
-				height: 400pX;
+				height: 150%;
+                width: 150%;
 			}
 			td:hover{
 				background-color: blue;
