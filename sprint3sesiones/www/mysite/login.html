@@ -20,12 +20,12 @@
     
     function validarFormulario(evento) {
       evento.preventDefault();
-      var usuario = document.getElementById('usuario').value;
+      var usuario = document.getElementById('f_email').value;
       if(usuario.length == 0) {
         alert('No has escrito nada en el usuario');
         return;
       }
-      var clave = document.getElementById('clave').value;
+      var clave = document.getElementById('f_password').value;
       if (clave.length == 0) {
         alert('La clave no es válida');
         return;
