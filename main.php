@@ -3,8 +3,8 @@
 <style>
 			
 			img:hover{
-				height: 200pX;
-                width: 100pX;
+                width: 200pX;
+
 			}
 			td:hover{
 				background-color: blue;
