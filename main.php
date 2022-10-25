@@ -6,12 +6,8 @@
                 width: 200pX;
 
 			}
-			td:hover{
-				background-color: blue;
-			}
-			td{
-				transition: background-color 0.4s linear 0.5s;
-			}
+		
+			
 		</style>
 </head>
 <body>
