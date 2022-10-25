@@ -1,19 +1,13 @@
 <html>
 <head>
 <style>
-			img{
-				transition: height 0.6s linear 0.3s;
-			}
+			
 			img:hover{
-				height: 200pX;
-                width: 100pX;
+				animation-name: fadeInOut, moveLeft300px, bounce;
+                animation-duration: 2.5s, 5s, 1s;
+                animation-iteration-count: 2, 1, 5;
 			}
-			td:hover{
-				background-color: blue;
-			}
-			td{
-				transition: background-color 0.4s linear 0.5s;
-			}
+		
 		</style>
 </head>
 <body>
