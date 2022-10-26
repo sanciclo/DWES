@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("formulario").addEventListener('submit', validarFormulario);
+        });
+
+        function validarFormulario(evento) {
+            evento.preventDefault();
+            var Antigua= document.getElementById('contraseñaAntigua').value;
+            var Nueva = document.getElementById('contraseñaNueva').value;
+
+            if (ntigua.length == 0) {
+                alert('No ha escrito su contraseña antigua');
+                return;
+            }
+            
+            if (Nueva.length == 0) {
+                alert('No ha escrito la contraseña nueva');
+                return;
+            }
+            if (Nueva==Antigua) {
+                alert('La contraseña antigua y la nueva son iguales, escriba una contraseña nueva diferente');
+                return;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Cambie su contraseña</h1>
+    <form action="contraseña.php" method="post" id="formulario">
+        <input type="password" name="f_antigua" placeholder="contraseña antigua" id="contraseñaAntigua"><br>
+        <input type="password" name="f_nueva" placeholder="contraseña nueva" id="contraseñaNueva"><br>
+
+        <input type="submit" value="Cambie su contraseña">
+    </form>
+</body>
+
+</html>
