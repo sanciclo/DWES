@@ -49,6 +49,7 @@
 	mysqli_close($db);
 	?>
 	<a href="/logout.php">Logout</a>
+	<a href="/contraseña.html">Cambiar contraseña</a>
 </body>
 </html>
 
